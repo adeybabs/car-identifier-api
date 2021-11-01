@@ -1,6 +1,8 @@
 package com.simple.Car.Identifier.service;
 
 
+import com.simple.Car.Identifier.entity.Car;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -22,5 +24,5 @@ public interface CarService {
             .asList("Petrol", "Electric", "Hybrid", "Water", "Gas");
 
 
-  //  Car generateCar();
+    Car generateCar();
 }

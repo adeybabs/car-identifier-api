@@ -1,6 +1,6 @@
 package com.simple.Car.Identifier.repository;
 
-import com.course.practicaljava.entity.CarPromotion;
+import com.simple.Car.Identifier.entity.CarPromotion;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
