@@ -1,8 +1,8 @@
 package com.simple.Car.Identifier.service;
 
-import com.course.practicaljava.entity.Car;
-import com.course.practicaljava.entity.Engine;
-import com.course.practicaljava.entity.Tire;
+import com.simple.Car.Identifier.entity.Car;
+import com.simple.Car.Identifier.entity.Engine;
+import com.simple.Car.Identifier.entity.Tire;
 import com.simple.Car.Identifier.util.RandomDateUtil;
 import org.springframework.stereotype.Service;
 
