@@ -1,4 +1,4 @@
-package com.simple.Car.Identifier.api;
+package com.simple.Car.Identifier.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -18,9 +18,9 @@ import java.util.Random;
 @RestController
 @RequestMapping(value = "/api")
 @Tag(name = "Default Rest API", description = "Documentation for Default Rest API")
-public class DefaultRestApi {
+public class DefaultRestController {
 
-    private Logger LOG = LoggerFactory.getLogger(DefaultRestApi.class);
+    private Logger LOG = LoggerFactory.getLogger(DefaultRestController.class);
 
     @GetMapping(value = "/welcome")
     @Operation(summary = "Welcome", description = "Description for welcome API")

@@ -1,7 +1,9 @@
-package com.simple.Car.Identifier.api;
+package com.simple.Car.Identifier.controller;
 
-import com.simple.Car.Identifier.entity.Car;
+import com.simple.Car.Identifier.exception.IllegalApiParamException;
 import com.simple.Car.Identifier.repository.CarElasticRepository;
+import com.simple.Car.Identifier.entity.Car;
+import com.simple.Car.Identifier.response.ErrorResponse;
 import com.simple.Car.Identifier.service.CarService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -30,9 +32,9 @@ import java.util.concurrent.ThreadLocalRandom;
 @RestController
 @RequestMapping(value = "/api/car/v1")
 @Tag(name = "Car API", description = "Documentation for Car API")
-public class CarApi {
+public class CarController {
 
-    private static final Logger LOG = LoggerFactory.getLogger(CarApi.class);
+    private static final Logger LOG = LoggerFactory.getLogger(CarController.class);
 
     @Autowired
     private CarElasticRepository carElasticRepository;

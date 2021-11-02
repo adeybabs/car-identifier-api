@@ -1,4 +1,4 @@
-package com.simple.Car.Identifier.api;
+package com.simple.Car.Identifier.controller;
 
 import com.course.practicaljava.entity.CarPromotion;
 import com.course.practicaljava.exception.IllegalApiParamException;
@@ -18,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/car/v1")
-public class CarPromotionApi {
+public class CarPromotionController {
 
     @Autowired
     private CarPromotionService carPromotionService;
