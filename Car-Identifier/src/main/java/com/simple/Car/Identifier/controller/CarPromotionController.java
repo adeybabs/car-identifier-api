@@ -1,10 +1,7 @@
 package com.simple.Car.Identifier.controller;
 
-import com.course.practicaljava.entity.CarPromotion;
-import com.course.practicaljava.exception.IllegalApiParamException;
-import com.course.practicaljava.repository.CarPromotionElasticRepository;
-import com.course.practicaljava.service.CarPromotionService;
 import com.simple.Car.Identifier.entity.CarPromotion;
+import com.simple.Car.Identifier.exception.IllegalApiParamException;
 import com.simple.Car.Identifier.repository.CarPromotionElasticRepository;
 import com.simple.Car.Identifier.service.CarPromotionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +24,7 @@ public class CarPromotionController {
     private CarPromotionElasticRepository carPromotionElasticRepository;
 
     @GetMapping(value = "/promotions")
-    public List<CarPromotion> listAvailablePromotions(
+    public List<CarPromotion> listOfAvailablePromotions(
             @RequestParam(name = "type") String promotionType,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
